@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.156" height="20.16" viewBox="0 0 12.156 20.16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ebebeb;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="tumblr" class="cls-1" d="M670.059,5135v13.02s-0.311,3.38,1.961,3.55c0,0,2.605.19,3.531-1.18v3.55a10.708,10.708,0,0,1-4.315,1.2c-2.092,0-5.45-1.04-5.492-5.14v-6.71h-2.353v-3.16s3.687-.4,4.315-5.13h2.353Zm-0.778,4.72h5.469v3.56h-5.469v-3.56Z" transform="translate(-663.406 -5135)"/>
+</svg>

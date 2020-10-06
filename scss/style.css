@@ -1,0 +1,422 @@
+body {
+  background-image: url("../img/bg/bg-lines.png");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: initial;
+  font-family: sans-serif;
+  padding-bottom: 500px;
+}
+
+body .container {
+  width: 1224px;
+  margin: 0 auto;
+}
+
+.read-more-link, a.read-more-link {
+  text-decoration: none;
+  color: #333333;
+  font-family: 'League-Spartan', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.read-more-link:after, a.read-more-link:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  background-color: #5da8ef;
+  opacity: 0.7;
+}
+
+.title {
+  color: #333333;
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.42px;
+  text-align: center;
+}
+
+.title .subtitle {
+  display: block;
+  color: #5da8ef;
+  font-family: 'League-Spartan', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+}
+
+.navigation-wrapper {
+  display: flex;
+  align-items: center;
+  height: 128px;
+}
+
+.navigation-wrapper .logo {
+  margin-right: 190px;
+}
+
+.navigation-wrapper .navigation {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'League-Spartan', sans-serif;
+  font-weight: 700;
+}
+
+.navigation-wrapper .navigation .navigation__item {
+  margin-right: 40px;
+}
+
+.navigation-wrapper .navigation .navigation__item:last-child {
+  margin-right: 0;
+}
+
+.navigation-wrapper .navigation .navigation__item .navigation__link {
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+  font-size: 9px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.58px;
+}
+
+.slide-wrapper {
+  position: relative;
+}
+
+.slide-wrapper .slide-item {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.slide-wrapper .slide-item .slide-item__desk {
+  width: 500px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slide-wrapper .slide-item .slide-item__desk .slide-item__heading {
+  color: #0b0c11;
+  font-family: 'Playfair Display', serif;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 14px;
+}
+
+.slide-wrapper .slide-item .slide-item__desk .slide-item__heading span {
+  display: block;
+  color: rgba(93, 168, 239, 0.9);
+  font-family: 'League-Spartan', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+  margin-bottom: 20px;
+}
+
+.slide-wrapper .slide-item .slide-item__desk .slide-item__text {
+  width: 389px;
+  color: #8f8f8f;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+
+.slide-wrapper .slide-item .slide-item__img {
+  width: 1016px;
+  height: 572px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: -16px 25px 65px rgba(11, 12, 17, 0.2);
+}
+
+.slide-wrapper .slide-item .slide-item__img--bg-1 {
+  background-image: url("../img/img/img-header.jpg");
+}
+
+.slide-wrapper .slide-controls {
+  position: absolute;
+  bottom: 0;
+  width: 81px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-wrapper .slide-controls .slide-controls-number {
+  font-family: 'League-Spartan', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.slide-wrapper .slide-controls .slide-controls-number .slide-controls-number__active {
+  color: #5da8ef;
+}
+
+.slide-wrapper .slide-controls .slide-controls-number .slide-controls-number__from {
+  color: #ebebeb;
+}
+
+.slide-wrapper .slide-controls .slide-controls-number .slide-controls-number__total {
+  color: #262626;
+}
+
+.header {
+  position: relative;
+  margin-bottom: 95px;
+}
+
+.header .site-desc {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: -50px;
+  top: 58px;
+}
+
+.header .site-desc .site-desc__content {
+  color: rgba(11, 12, 17, 0.2);
+  font-family: 'League-Spartan', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+  transform: rotate(-90deg) translate(-100%, 0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: left top;
+}
+
+.header .header-social {
+  width: 20px;
+  position: absolute;
+  right: -45px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header .header-social .header-social__item {
+  margin-bottom: 32px;
+}
+
+.header .header-social .header-social__item:last-child {
+  margin-bottom: 0;
+}
+
+.quote {
+  padding-top: 95px;
+  padding-bottom: 110px;
+}
+
+.quote .quote__wrapper {
+  width: 610px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.quote .quote__wrapper:after {
+  content: "";
+  width: 2px;
+  height: 100px;
+  background-color: #5da8ef;
+  position: absolute;
+  bottom: -58px;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+.quote .quote__wrapper .quote__text {
+  color: rgba(51, 51, 51, 0.9);
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.26px;
+  margin-bottom: 25px;
+}
+
+.quote .quote__wrapper .quote__author {
+  color: rgba(51, 51, 51, 0.9);
+  font-family: 'League-Spartan', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+}
+
+.club-description {
+  padding-top: 110px;
+  padding-bottom: 95px;
+}
+
+.club-description .club-description-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.club-description .club-description-wrapper .club-description-video {
+  position: absolute;
+  right: 0;
+  top: 43px;
+  z-index: 1;
+}
+
+.club-description .club-description-wrapper .club-description-video .club-description-video__control {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 68px;
+  height: 68px;
+  box-shadow: -2px -2px 35px rgba(0, 0, 0, 0.13);
+  background-color: #5da8ef;
+  border-radius: 50%;
+}
+
+.club-description .club-description-wrapper .club-description-video .club-description-video__control img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-35%, -50%);
+}
+
+.club-description .club-description-wrapper .club-description__text {
+  margin-top: 60px;
+  margin-left: 115px;
+  width: 340px;
+  color: rgba(97, 97, 97, 0.6);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+  margin-bottom: 45px;
+}
+
+.club-description .club-description-wrapper .club-description__link {
+  margin-left: 115px;
+}
+
+.shop {
+  padding-top: 95px;
+}
+
+.shop .shop-slider {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop .shop-slider .board {
+  position: relative;
+  width: 350px;
+  height: 435px;
+}
+
+.shop .shop-slider .board .board__img-holder {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  height: 320px;
+  background-color: #ececec;
+}
+
+.shop .shop-slider .board .board__img-holder .board__img {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.shop .shop-slider .board .board-desc {
+  position: absolute;
+  top: 196px;
+  left: 216px;
+  width: 210px;
+}
+
+.shop .shop-slider .board .board-desc .board__cat {
+  color: #7a7a7a;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+
+.shop .shop-slider .board .board-desc .board__title {
+  color: #333333;
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.26px;
+}
+
+.shop .shop-slider .board .board-desc .board-buy {
+  margin-top: 38px;
+  margin-left: 55px;
+}
+
+.shop .shop-slider .board .board-desc .board-buy .board-buy__price {
+  color: #ce60a8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  margin-bottom: 3px;
+}
+
+.shop .shop-slider .board .board-desc .board-buy .board-buy__link {
+  color: #333333;
+  font-family: 'League-Spartan', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+  margin-left: 4px;
+}
+
+.shop .shop-link-wrapper {
+  display: flex;
+  justify-content: center;
+}
