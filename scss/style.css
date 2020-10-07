@@ -475,6 +475,7 @@ body .container {
 .article .article__preview {
   width: 762px;
   position: relative;
+  flex: 0 0 762px;
 }
 
 .article .article__preview .article__preview-desc {
@@ -483,4 +484,25 @@ body .container {
   position: absolute;
   right: -30px;
   top: 0;
+}
+
+.article--odd {
+  flex-direction: row-reverse;
+}
+
+.article--odd .article__preview {
+  width: 490px;
+  flex: 0 0 490px;
+}
+
+.article--odd .article__preview .article__preview-desc {
+  left: -30px;
+  right: auto;
+}
+
+.article--odd .article__desc {
+  width: 515px;
+  flex: 00 515px;
+  padding-left: 75px;
+  padding-right: 105px;
 }

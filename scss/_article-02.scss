@@ -1,0 +1,17 @@
+.article--odd{
+    flex-direction: row-reverse;
+    .article__preview{
+        width: 490px;
+        flex: 0 0 490px;
+        .article__preview-desc{
+            left: -30px;
+            right: auto;
+        }
+    }
+    .article__desc{
+        width: 515px;
+        flex: 00 515px;
+        padding-left: 75px;
+        padding-right: 105px;
+    }
+}
