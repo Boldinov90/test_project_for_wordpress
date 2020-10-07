@@ -2,7 +2,6 @@
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
-
     .article__desc{
         width: 462px;
         padding-left: 70px;
@@ -43,9 +42,6 @@
         .article__text{
             @extend .desc-text;
         }
-        .read-more-link{
-
-        }
     }
     .article__preview{
         width: 762px;
@@ -57,18 +53,7 @@
             right: -30px;
             top: 0;
             .article__preview-desc-content{
-                color: rgba(11, 12, 17, 0.2);
-                font-family: 'League-Spartan', sans-serif;
-                font-size: 9px;
-                font-weight: 700;
-                line-height: 1;
-                text-transform: uppercase;
-                letter-spacing: 5.4px;
-                transform: rotate(-90deg) translate(-100%, 0);
-                position: absolute;
-                left: 0;
-                top: 0;
-                transform-origin: left top;
+                @extend .vertical-text;
             }
         }
     }
