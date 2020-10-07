@@ -335,6 +335,7 @@ body .container {
 
 .shop {
   padding-top: 95px;
+  padding-bottom: 110px;
 }
 
 .shop .shop-slider {
@@ -419,4 +420,10 @@ body .container {
 .shop .shop-link-wrapper {
   display: flex;
   justify-content: center;
+}
+
+.article {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
