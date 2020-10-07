@@ -45,6 +45,7 @@ body .container {
   line-height: 1.2;
   letter-spacing: 0.42px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .title .subtitle {
@@ -505,4 +506,31 @@ body .container {
   flex: 00 515px;
   padding-left: 75px;
   padding-right: 105px;
+}
+
+.subscribe-wrapper .subscribe {
+  width: 590px;
+  margin-top: 50px;
+  padding-top: 160px;
+  padding-bottom: 75px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.subscribe-wrapper .subscribe:before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  display: block;
+  width: 2px;
+  height: 100px;
+  background-color: #5da8ef;
+}
+
+.subscribe-wrapper .subscribe .desc-text, .subscribe-wrapper .subscribe .club-description .club-description-wrapper .club-description__text, .club-description .club-description-wrapper .subscribe-wrapper .subscribe .club-description__text, .subscribe-wrapper .subscribe .article .article__desc .article__text, .article .article__desc .subscribe-wrapper .subscribe .article__text {
+  margin-bottom: 35px;
 }
