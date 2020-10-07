@@ -59,3 +59,19 @@
         }
     }
 }
+
+.article--even{
+    .article__preview{
+        .article__preview-desc{
+            @media  (max-width: 1400px){
+                right: 30px;
+                top: 30px;
+            }
+            .article__preview-desc-content{
+                @media  (max-width: 1400px){
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
