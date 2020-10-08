@@ -8,32 +8,37 @@
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="fonts/league-spartan/league-spartan.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display:wght@400;700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/owlcarousel2/assets/owl.theme.default.min.css">
 </head>
 <body>
-    <header class="container header">
-        <nav class="navigation-wrapper">
-            <div class="nav-logo-wrapper">
-                <a href="#" class="logo">
-                    <img width="16" src="img/logo/logo.svg" alt="logo">
-                </a>
-            </div>
-            <ul class="navigation">
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">Stories</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">Events</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">Places</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">Boards</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="slide-wrapper">
-            <div class="slide-item">
+    <nav class="container navigation-wrapper relative">
+        <div class="nav-logo-wrapper">
+            <a href="#" class="logo">
+                <img width="16" src="img/logo/logo.svg" alt="logo">
+            </a>
+        </div>
+        <ul class="navigation">
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Stories</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Events</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Places</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Boards</a>
+            </li>
+        </ul>
+        <div class="site-desc">
+            <div class="site-desc__content">First&nbsp;Surfing&nbsp;Magazine</div>
+        </div>
+    </nav>
+    <div class="slide-wrapper">
+        <div id="headerSlider" class="owl-carousel">
+            <div class="container slide-item">
                 <div class="slide-item__desk">
                     <h2 class="slide-item__heading">
                         <span>Your</span>
@@ -44,12 +49,27 @@
                             One of the greatest things about the sport of surfing is that you need only three things: your body, 
                             a surfboard, and a wave.
                         </p>
-                    </div>
-                    
-                    
+                    </div>   
                 </div>
                 <div class="slide-item__img slide-item__img--bg-1"></div>
             </div>
+            <div class="container slide-item">
+                <div class="slide-item__desk">
+                    <h2 class="slide-item__heading">
+                        <span>Your</span>
+                        Beautiful Escape
+                    </h2>
+                    <div class="slide-item__text">
+                        <p>
+                            One of the greatest things about the sport of surfing is that you need only three things: your body, 
+                            a surfboard, and a wave.
+                        </p>
+                    </div>   
+                </div>
+                <div class="slide-item__img slide-item__img--bg-1"></div>
+            </div>
+        </div>   
+        <div class="container relative">
             <div class="slide-controls">
                 <a class="slide-controls__left" href="#">
                     <img src="img/controls/header-slider-left.svg" alt="left">
@@ -63,12 +83,8 @@
                     <img src="img/controls/header-slider-right.svg" alt="right">
                 </a>
             </div>
-        </div>
-        <div class="site-desc">
-            <div class="site-desc__content">First&nbsp;Surfing&nbsp;Magazine</div>
-        </div>
-        <div class="header-social-wrapper">
-            <div class="social social--vertical">
+            <div class="header-social-wrapper">
+                <div class="social social--vertical">
                     <a class="social__item" href="#">
                         <img src="img/socials/tumblr.svg" alt="">
                     </a>
@@ -78,9 +94,10 @@
                     <a class="social__item" href="#">
                         <img src="img/socials/vimeo.svg" alt="">
                     </a>
+                </div> 
             </div>
         </div>
-    </header>
+    </div>
     <section class="quote">
         <div class="quote__wrapper">
             <div class="quote__text">
@@ -269,5 +286,8 @@
         </div>
     </section>  
     <script type="text/javascript" src="https://spikmi.com/Widget?Id=4221"></script>
+    <script src="./libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./libs/owlcarousel2/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html> 

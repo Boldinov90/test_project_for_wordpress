@@ -1,9 +1,8 @@
 .slide-wrapper{
-    // background-color: red;
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding-bottom: 95px;
+    padding-bottom: 95px; 
     .slide-item{
         display: flex;
         justify-content: flex-end;
@@ -41,9 +40,6 @@
                 font-weight: 300;
                 line-height: 24px;
                 letter-spacing: 0.35px;
-                // p{
-    
-                // }
             }
         }
         .slide-item__img{
@@ -64,9 +60,7 @@
         width: 81px;
         display: flex;
         justify-content: space-between;
-        // .slide-controls__left{
-
-        // }
+        z-index: 9;
         .slide-controls-number{
             font-family: 'League-Spartan', sans-serif;
             font-size: 10px;
@@ -87,12 +81,24 @@
                 color: #262626;
             }
         }
-        // .slide-controls__right{
-
-        // }
+    }
+    .header-social-wrapper{
+    width: 20px;
+    position: absolute;
+    right: -45px;
+    bottom: 0;
+    z-index: 9;
+    @media  (max-width: 1400px){
+        right: 30px;
+        bottom: 30px;
     }
 }
-
+}
+#headerSlider.owl-carousel{
+    .owl-stage-outer{
+        overflow: visible;
+    }
+}
 
 
 
