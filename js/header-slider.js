@@ -1,6 +1,6 @@
 // Настройки верхнего слайдера (JQUERY)
 $(document).ready(function(){
-    const headerSlider = $(".owl-carousel");
+    const headerSlider = $("#headerSlider");
 
     headerSlider.on('initialized.owl.carousel', function(event){
         $('.slide-controls-number__active').text(event.item.index + 1);
