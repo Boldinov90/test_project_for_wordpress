@@ -4,12 +4,21 @@ $(document).ready(function(){
 
     shopSlider.owlCarousel({
         items: 3,
-        // loop: true, // зацикливание
+        loop: true, // зацикливание
         dots: false, 
+        margin: 2, 
         smartSpeed: 500
     });
 
 
+
+    $('#shopSliderLeft').click(function() {
+        shopSlider.trigger('prev.owl.carousel');
+    });
+    
+    $('#shopSliderRight').click(function() {
+        shopSlider.trigger('next.owl.carousel');
+    });
 
 
 

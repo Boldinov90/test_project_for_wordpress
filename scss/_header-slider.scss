@@ -61,6 +61,10 @@
         display: flex;
         justify-content: space-between;
         z-index: 9;
+        cursor: pointer;
+        img{
+            vertical-align: middle;
+        }
         .slide-controls-number{
             font-family: 'League-Spartan', sans-serif;
             font-size: 10px;

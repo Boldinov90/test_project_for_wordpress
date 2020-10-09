@@ -229,6 +229,11 @@ body {
   display: flex;
   justify-content: space-between;
   z-index: 9;
+  cursor: pointer;
+}
+
+.slide-wrapper .slide-controls img {
+  vertical-align: middle;
 }
 
 .slide-wrapper .slide-controls .slide-controls-number {
@@ -380,26 +385,40 @@ body {
   width: 100%;
   height: 984px;
   z-index: -1;
-  background-image: url(../img/bg/bg-water.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url("../img/bg/bg-lines.png"), url(../img/bg/bg-water.jpg);
+  background-repeat: repeat-y, no-repeat;
+  background-position: center, center;
+  background-size: auto, cover;
 }
 
-.shop .shop-slider {
+.shop-slider-wrapper {
+  height: 565px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.shop-slider-special-holder {
+  position: absolute;
+  left: 0;
+  right: -85px;
+  margin-bottom: 50px;
+}
+
+.shop-slider {
   margin-top: 50px;
   margin-bottom: 80px;
   display: flex;
   justify-content: space-between;
 }
 
-.shop .shop-slider .board {
+.board {
   position: relative;
-  width: 350px;
+  width: 435px;
   height: 435px;
+  margin-top: 130px;
 }
 
-.shop .shop-slider .board .board__img-holder {
+.board__img-holder {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -408,21 +427,21 @@ body {
   background-color: #ececec;
 }
 
-.shop .shop-slider .board .board__img-holder .board__img {
+.board__img {
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translate(-50%, 0);
 }
 
-.shop .shop-slider .board .board-desc {
+.board-desc {
   position: absolute;
   top: 196px;
   left: 216px;
   width: 210px;
 }
 
-.shop .shop-slider .board .board-desc .board__cat {
+.board__cat {
   color: #7a7a7a;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
@@ -431,7 +450,7 @@ body {
   letter-spacing: 2.4px;
 }
 
-.shop .shop-slider .board .board-desc .board__title {
+.board__title {
   color: #333333;
   font-family: 'Playfair Display', serif;
   font-size: 26px;
@@ -440,12 +459,12 @@ body {
   letter-spacing: 0.26px;
 }
 
-.shop .shop-slider .board .board-desc .board-buy {
+.board-buy {
   margin-top: 38px;
   margin-left: 55px;
 }
 
-.shop .shop-slider .board .board-desc .board-buy .board-buy__price {
+.board-buy__price {
   color: #ce60a8;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
@@ -454,7 +473,7 @@ body {
   margin-bottom: 3px;
 }
 
-.shop .shop-slider .board .board-desc .board-buy .board-buy__link {
+.board-buy__link {
   color: #333333;
   font-family: 'League-Spartan', sans-serif;
   font-size: 9px;
@@ -465,9 +484,42 @@ body {
   margin-left: 4px;
 }
 
-.shop .shop-link-wrapper {
+.shop-link-wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 130px;
+}
+
+.shopSlider-controls {
+  position: relative;
+}
+
+.shopSlider-arrow {
+  width: 40px;
+  height: 48px;
+  padding: 15px;
+  position: absolute;
+  bottom: calc(75px + 80px);
+  z-index: 9;
+  cursor: pointer;
+}
+
+.shopSlider-arrow img {
+  vertical-align: top;
+}
+
+.shopSlider-arrow--left {
+  left: -70px;
+  transform: translate(-100%, 0);
+}
+
+.shopSlider-arrow--right {
+  right: -70px;
+  transform: translate(100%, 0);
+}
+
+#shopSlider.owl-carousel .owl-item img {
+  width: auto;
 }
 
 .article {
@@ -580,10 +632,10 @@ body {
   width: 100%;
   height: 1335px;
   z-index: -1;
-  background-image: url(../img/bg/bg-surfer.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url("../img/bg/bg-lines.png"), url(../img/bg/bg-surfer.jpg);
+  background-repeat: repeat-y, no-repeat;
+  background-position: center, center;
+  background-size: auto, cover;
 }
 
 .subscribe-wrapper .subscribe {
