@@ -3,6 +3,9 @@
     align-items: center;
     height: 128px;
     position: relative;
+    @media (min-width: 1254px) {
+        
+    }
     .site-desc{
         width: 12px;
         height: 12px;
