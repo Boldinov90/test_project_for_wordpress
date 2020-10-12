@@ -4,7 +4,6 @@ body {
   background-position: center;
   background-size: initial;
   font-family: sans-serif;
-  padding-bottom: 500px;
 }
 
 img {
@@ -1269,16 +1268,35 @@ img {
 }
 
 .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .footer .footer-logo-wrapper {
-  margin-bottom: 35px;
+  margin-bottom: 17.5px;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-logo-wrapper {
+    margin-bottom: 35px;
+  }
 }
 
 .footer .footer-nav-wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-nav-wrapper {
+    margin-bottom: 40px;
+  }
 }
 
 .social {
