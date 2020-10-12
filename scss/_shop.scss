@@ -1,9 +1,11 @@
 .shop{
-    padding-top: 95px;
-    padding-bottom: 110px;
+    padding-top: 47.5px;
+    padding-bottom: 55px;
     position: relative;
+    
     @media  (min-width: 1254px){
-        
+        padding-top: 95px;
+        padding-bottom: 110px;
     }  
     &:before{
         position: absolute;
@@ -29,9 +31,10 @@
 .shop-slider-special-holder{
     position: absolute;
     left: 0;
-    right: -85px;
-    margin-bottom: 50px;
-
+    right: 0;
+    @media  (min-width: 1394px){
+        right: -85px;
+    }  
 }
 .shop-slider{
     margin-top: 50px;
@@ -41,9 +44,18 @@
 }
 .board{
     position: relative;
-    width: 435px;
-    height: 435px;
+    width: 250px;
+    height: 493px;
     margin-top: 130px;
+    margin: 0 auto;
+    @media  (min-width: 650px){
+        padding-left: 185px;
+        width: 620px;
+    }
+    @media  (min-width: 1254px){
+        margin-left: 0;
+        padding-left: 0;
+    }    
 }
 .board__img-holder{
     position: absolute;
@@ -52,6 +64,12 @@
     width: 250px;
     height: 320px;
     background-color: #ececec;
+    @media  (min-width: 650px){
+        left: 185px;       
+    }
+    @media  (min-width: 1254px){
+        left: 0;
+    }  
 }
 .board__img{
     position: absolute;
@@ -61,9 +79,19 @@
 }
 .board-desc{
     position: absolute;
-    top: 196px;
-    left: 216px;
+    top: 240px;
+    right: 0;
     width: 210px;
+    z-index: 9;
+    text-align: right;
+    @media  (min-width: 650px){
+        right: auto;
+        left: 401px;
+        text-align: left;     
+    }
+    @media  (min-width: 1254px){
+        left: 216px;
+    }  
 }
 .board__cat{
     color: #7a7a7a;
@@ -118,20 +146,39 @@
     height: 48px;
     padding: 15px;
     position: absolute;
-    bottom: calc(75px + 80px);
+    bottom: 230px;
     z-index: 9;
     cursor: pointer;
+    @media  (min-width: 650px){
+        bottom: 180px;
+    }  
     img{
         vertical-align: top;
     }
 }
 .shopSlider-arrow--left{
-    left: -70px;
-    transform: translate(-100%, 0);
+    left: -15px;
+    @media  (min-width: 650px){
+        left: 0;
+        transform: translate(100%, 0);
+    }
+    @media  (min-width: 1334px){
+        left: 0px;
+        transform: translate(-100%, 0);
+
+    }     
 }
 .shopSlider-arrow--right{
-    right: -70px;
-    transform: translate(100%, 0);
+    right: -15px;
+    @media  (min-width: 650px){
+        right: 0;
+        transform: translate(-100%, 0);
+    }
+    @media  (min-width: 1334px){
+        right: 0;
+        transform: translate(100%, 0);
+
+    }    
 }
 #shopSlider.owl-carousel .owl-item img{
     width: auto;
