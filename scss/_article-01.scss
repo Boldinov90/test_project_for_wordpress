@@ -1,33 +1,57 @@
 .article{
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    flex-direction: column-reverse;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media  (min-width: 768px){
+        flex-direction: row;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }  
     .article__desc{
-        width: 462px;
-        padding-left: 70px;
-        padding-right: 50px;
-        padding-top: 80px;
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 20px;
+        @media  (min-width: 768px){
+            padding-right: 15px;
+        }  
+        @media  (min-width: 1254px){
+            width: 462px;
+            padding-left: 70px;
+            padding-right: 50px;
+            padding-top: 80px;
+        }  
         .article__title{
             color: #333333;
             font-family: 'Playfair Display', serif;
-            font-size: 42px;
+            font-size: 32px;
             font-weight: 700;
-            line-height: 66px;
+            line-height: 2;
             letter-spacing: 0.42px;
             position: relative;
-            margin-bottom: 45px;
+            margin-bottom: 15px;
+            @media  (min-width: 1254px){
+                font-size: 42px;
+                line-height: 66px;
+                margin-bottom: 45px;
+            }  
             &:before{
                 content: attr(data-number);
                 color: #f9f9f9;
                 font-family: 'League-Spartan', sans-serif;
-                font-size: 130px;
+                font-size: 70px;
                 font-weight: 700;
                 line-height: 66px;
                 letter-spacing: 13px;
                 position: absolute;
                 left: 0;
-                top: -17px;
+                top: -5px;
                 z-index: -1;
+                @media  (min-width: 1254px){
+                    font-size: 130px;
+                    top: -17px;
+                }  
             }
             &:after{
                 content: "";
@@ -40,13 +64,25 @@
             }
         }
         .article__text{
+            margin-bottom: 20px;
             @extend .desc-text;
+            @media  (min-width: 1254px){
+                margin-bottom: 60px;
+            }  
         }
     }
     .article__preview{
-        width: 762px;
+        width: 100%;
         position: relative;
-        flex: 0 0 762px;
+        margin-bottom: 25px;
+        @media  (min-width: 768px){
+            width: 50%;
+            flex: 0 0 50%;
+        }  
+        @media  (min-width: 1254px){
+            width: 762px;
+            flex: 0 0 762px;
+        }  
         .article__preview-desc{
             width: 10px;
             height: 10px;
