@@ -2,6 +2,9 @@
     padding-top: 95px;
     padding-bottom: 110px;
     position: relative;
+    @media  (min-width: 1254px){
+        
+    }  
     &:before{
         position: absolute;
         content: "";
