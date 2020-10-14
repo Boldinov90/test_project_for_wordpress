@@ -11,7 +11,7 @@ $(document).ready(function(){
         items: 1,
         // loop: true, // зацикливание
         dots: false, 
-        smartSpeed: 2000
+        smartSpeed: 500
     });
     $('#headerSliderLeft').click(function() {
         headerSlider.trigger('prev.owl.carousel');
